@@ -67,6 +67,22 @@ if (popupBody) {
 
 
 	
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 150;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = 10;
+  let counter = setInterval(function () {
+    startValue += 100;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+
 
 
 
