@@ -1,0 +1,138 @@
+.footer {
+	position: relative;
+	top: -24px;
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 20px;
+	align-items: start;
+	padding: 28px 4.4444% 2rem 4.4444%;
+	row-gap: 24px;
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: white;
+}
+.footer-main-nav {
+	grid-column:  1 / span 12;
+}
+.footer h5 {
+	grid-column:  1 / span 12;
+}
+.footer-sublist {
+	padding: 0 10px 10px 0;
+}
+.footer-sublist li, h6 {
+	margin-bottom: 14px;
+}
+.footer-sublist li h6{
+	font-weight: 400;
+}
+.sublist-first {
+	grid-column: 1 / 6;
+}
+.sublist-second {
+	grid-column:  6 / 12;
+}
+.sublist-third {
+	display: none;
+}
+.footer-ingrad-logo {
+	grid-column:  1 / span 12;
+}
+.footer-app-links-mobile {
+	grid-column:  1 / span 12;
+}
+.footer-app-links-mobile img{
+	margin-bottom: 18px;
+	padding-right: 18px;
+}
+.footer-app-block {
+	display: none;
+}
+.footer-contacts {
+	grid-column:  1 / span 12;
+}
+.footer-contacts a {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #000000;
+}
+.footer-contacts-social-icons {
+	grid-column:  1 / span 12;
+	margin: 15px 0 8px 0 ;
+}
+.footer-contacts-social-icons img {
+	margin-right: 24px;
+}
+.footer-legal {
+	grid-column:  1 / span 12;
+
+}
+.footer-legal p{
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.625rem;
+	line-height: 0.875rem;
+	letter-spacing: 0.025em;
+	color: #000000;
+	opacity: 0.5;
+}
+
+@media screen and (min-width: 831px) {
+	.sublist-first {
+	grid-column: 1 / span 4;
+	}
+	.sublist-second {
+		grid-column: 5 / span 4;
+	}	
+	.sublist-third {
+		display: block;
+		grid-column: 9 / span 4;
+
+	}
+	.footer-app-block {
+		display: block;
+		grid-column: 1 / 5;
+	}
+	.footer-app-links-mobile {
+		display: none;
+	}
+	.footer-app-links-desktop {
+		display: flex;
+	}
+	.footer-app-links-desktop img{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.footer-ingrad-logo {
+		grid-row-start: 1;
+		grid-column: 1 / span 4 ;
+	}
+	.footer-app-block {
+		grid-row-start: 1;
+		grid-column: 1 / span 4 ;
+		margin-top: 72px;
+	}
+	.footer-main-nav {
+		grid-column:  6 / span 6;
+	}
+	.footer h5 {
+		display: none;
+	}
+	.sublist-first {
+		grid-column: 6 / span 2;
+	}
+	.sublist-second {
+		grid-column: 8 / span 2;
+	}	
+	.sublist-third {
+		grid-column: 10 / span 2;
+	}
+
+}
