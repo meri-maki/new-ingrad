@@ -6,6 +6,7 @@ html { font-family: 'Inter', sans-serif; }
 } */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @font-face {
   font-family: 'DrukTextWideCy-Bold-Desktop';
   src: url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('embedded-opentype'), /* Internet Explorer */
@@ -13,6 +14,24 @@ html { font-family: 'Inter', sans-serif; }
        url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('woff'),              /* Pretty Modern Browsers */
        url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('truetype'),          /* Safari, Android, iOS */
        url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('svg');               /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'DrukTextWideCy-Heavy-Desktop';
+  src: url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('embedded-opentype'), /* Internet Explorer */
+       url('./fonts/DrukTextWideCy-Heavy-Desktop.otf') format('woff2'),             /* Super Modern Browsers */
+       url('./fonts/DrukTextWideCy-Heavy-Desktop.otf') format('woff'),              /* Pretty Modern Browsers */
+       url('./fonts/DrukTextWideCy-Heavy-Desktop.otf') format('truetype'),          /* Safari, Android, iOS */
+       url('./fonts/DrukTextWideCy-Heavy-Desktop.otf') format('svg');               /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'DrukTextWideCy-Medium-Desktop';
+  src: url('./fonts/DrukTextWideCy-Bold-Desktop.otf') format('embedded-opentype'), /* Internet Explorer */
+       url('./fonts/DrukTextWideCy-Medium-Desktop.otf') format('woff2'),             /* Super Modern Browsers */
+       url('./fonts/DrukTextWideCy-Medium-Desktop.otf') format('woff'),              /* Pretty Modern Browsers */
+       url('./fonts/DrukTextWideCy-Medium-Desktop.otf') format('truetype'),          /* Safari, Android, iOS */
+       url('./fonts/DrukTextWideCy-Medium-Desktop.otf') format('svg');               /* Legacy iOS */
 }
  * {
 	--black-text: #212121;
@@ -42,7 +61,7 @@ section {
 	align-content: center;
 }
 h1, h2, h3, h4 {
-	font-family: 'Druk Text Wide Cy';
+	font-family: 'DrukTextWideCy-Bold-Desktop';
 	font-style: normal;
 	color: var(--black-text);
 	opacity: 0.95;
@@ -66,13 +85,14 @@ h2 .smaller-statistics{
 	font-size: 3rem;
 }
 h3 {
+	font-family: 'DrukTextWideCy-Medium-Desktop';
 	font-weight: 500;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	margin-bottom: 1.125rem;
 }
 h4 {
-	font-weight: 700;
+	font-family: 'DrukTextWideCy-Heavy-Desktop';
 	font-size: 1.125rem;
 	line-height: 1.5rem;
 	color: #FFFFFF;
@@ -418,9 +438,8 @@ div.section-cards-individual {
 }
 
 .list-text {
-	font-family: 'Druk Text Wide Cy';
+	font-family: 'DrukTextWideCy-Medium-Desktop';
 	font-style: normal;
-	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 	color: #212121;
@@ -575,6 +594,7 @@ div.section-cards-individual {
 		line-height: 5.5rem;
 	}
 	h3 {
+		font-family: 'DrukTextWideCy-Bold-Desktop';
 		font-size: 2.75rem;
 		line-height: 3.375rem;
 	}
