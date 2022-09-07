@@ -60,7 +60,8 @@ if (playYoutube) {
 if (popupBody) {
   popupBody.addEventListener("click", function (e) {
     popupBody.closest(".pop-up-youtube").classList.toggle("open");
-    videoElement.src = "";
+	  videoElement.src = "";
+	  body.classList.toggle("_lock");
   });
 }
 
