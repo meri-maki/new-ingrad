@@ -7,8 +7,7 @@ const centeredImage = document.getElementById("center-image");
 const scrollableContainer = document.querySelector(".section-more-clients-images-card");
 
 
-centeredImage.parentNode.scrollLeft =
-  centeredImage.clientWidth/1.28;//130
+centeredImage.parentNode.scrollLeft = centeredImage.clientWidth / 130;//130 1.28
 /*function scrollToCenter() {
   scrollableContainer.scrollLeft =
     centeredImage[centeredImage.length - 1].offsetLeft;
@@ -66,17 +65,18 @@ if (popupBody) {
 }
 
 
+// COUNT UP STATISTICS
+
 let section_counter = document.querySelector(".section-statistics");
 let counters = document.querySelectorAll(".num");
 
-// Scroll Animation
 
 let CounterObserver = new IntersectionObserver(
   (entries, observer) => {
     let [entry] = entries;
     if (!entry.isIntersecting) return;
 
-    let speed = 80;
+    let speed = 20;
     counters.forEach((counter, index) => {
       function UpdateCounter() {
         const targetNumber = +counter.dataset.target;
@@ -102,6 +102,12 @@ let CounterObserver = new IntersectionObserver(
 );
 
 CounterObserver.observe(section_counter);	
+
+
+
+
+
+// SLIDE STORIES
 
 class SlideStories {
   constructor(id) {
