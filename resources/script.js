@@ -3,11 +3,24 @@
 //document.getElementById("center-image").scrollIntoView({ behavior: "auto", inline: "center" });
 
 
-const centeredImage = document.getElementById("center-image");
-const scrollableContainer = document.querySelector(".section-more-clients-images-card");
+/* const centeredImage = document.getElementById("center-image");
+const scrollableContainer = document.querySelector(".section-more-clients-images-card"); */
 
+/* function centerThirdImageOfHorizontalGallery() {
+  const horizontalGallery = document.querySelector(
+    ".section-more-flats-images-card"
+  );
+  const imageToCenter = document.querySelector("#center-image");
 
-centeredImage.parentNode.scrollLeft = centeredImage.clientWidth / 130;//130 1.28
+  // Centers the image by setting its parent element's scrollLeft
+  horizontalGallery.scrollLeft =
+    imageToCenter.offsetLeft -
+    horizontalGallery.clientWidth / 2 +
+    imageToCenter.clientWidth / 2;
+} */
+
+/* centeredImage.parentNode.scrollLeft = centeredImage.clientWidth / 130; */
+///130 1.28
 /*function scrollToCenter() {
   scrollableContainer.scrollLeft =
     centeredImage[centeredImage.length - 1].offsetLeft;

@@ -259,8 +259,8 @@ section.section-border-card {
 	grid-gap: 7px;
 	grid-template-columns: repeat(5, 27%);
 	grid-template-rows: minmax(190px, auto);
-	justify-content: space-around;
-	overflow-x: auto;
+	justify-items: center;
+	overflow-y: hidden;
 	margin-bottom: 34px;
 }
 .image-card {
@@ -697,6 +697,7 @@ section.section-g {
 @media screen and (min-width: 1019px) {
 	.section-more-flats-images-card {
 		grid-template-columns: repeat(5, 275px);
+		/* justify-content: space-around; */
 	}
 	.section-first-text {
 		grid-column: col-start 7 / span 6;
