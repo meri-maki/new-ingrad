@@ -345,19 +345,22 @@ div.section-cards-individual {
 	object-fit: cover;
 	margin: auto;
 	position: absolute;
+	width: 100%; 
+  	height: 100%;
+	object-position: right 30%;
 	
 } 
 
 .section-cards-individual:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  height: 80%;
-  background: linear-gradient(0deg, #181818 0%, rgba(25, 23, 29, 0.447294) 50%, rgba(24, 24, 24, 0) 100%);
-  opacity: 1;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	height: 80%;
+	background: linear-gradient(0deg, #181818 0%, rgba(25, 23, 29, 0.447294) 50%, rgba(24, 24, 24, 0) 100%);
+	opacity: 1;
 }
 
 .caption{
@@ -399,26 +402,26 @@ div.section-cards-individual {
 	background-position: bottom 50% right 50%;
 } */
 
-.card1 img {
-	width: calc(100% + 38px); /* <------------- HERE */
+/* .card1 img {
+	width: calc(100% + 38px); /* 
   	height: calc(100% + 7px);
 	object-position: top -7px left -38px;
 }
 .card2 img {
-	width: calc(100% + 319px); /* <------------- HERE */
+	width: calc(100% + 319px); /* 
   	height: calc(100% + 2px);
 	object-position: top -2px left -319px;
 }
 .card3 img {
-	width: calc(100% + 66px); /* <------------- HERE */
+	width: calc(100% + 66px); /* 
   	height: calc(100% + 2px);
 	object-position: top -2px left -66px;
 }
 .card4 img {
-	width: calc(100% + 33px); /* <------------- HERE */
+	width: calc(100% + 33px); /* 
   	height: calc(100% + 94px);
 	object-position: top -94px left -33px;
-}  
+}   */
 
 
 section.section-g {
@@ -519,9 +522,9 @@ section.section-g {
 
 
 
-	.slide {
-		display: none;
-	}
+.slide {
+	display: none;
+}
 
 
 
@@ -541,8 +544,8 @@ section.section-g {
 	} 
 
 	.section-more-flats p {
-	display: block;
-}
+		display: block;
+	}
 	.section-more-flats h3 {
 		margin-bottom: 1.125rem;
 	}
@@ -565,17 +568,17 @@ section.section-g {
 		border-radius: 2rem;
 		overflow: hidden;
 		z-index: 5;
-		}
+	}
 
-		.slide-items {
+	.slide-items {
 		position: relative;
 		grid-area: 1/1;
-		}
-		.slide-item {
-			height: 100%;
-			width: 100%;
-		}
-		.slide-item:after {
+	}
+	.slide-item {
+		height: 100%;
+		width: 100%;
+	}
+	.slide-item:after {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -585,83 +588,80 @@ section.section-g {
 		height: 100%;
 		background: linear-gradient(90deg, #181818 0%, rgba(25, 23, 29, 0.447294) 50%, rgba(24, 24, 24, 0) 100%);
 		opacity: 1;
-		}
+	}
 
-		.caption-slide {
-			z-index: 10;
-			position: absolute;
-			left: 5%;
-			right: 52%;
-			top: 37%;
-			bottom: 36%;
-		}
-		.caption-slide h4 {
-			font-size: 2.125rem;
-			line-height: 3rem;
-		}
-
-
-		.slide-item:first-child {
-			background-image: url(/new-ingrad/resources/images/cards/card1.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: bottom 0 right 50%;
-
-		}
-		.slide-item:nth-child(2) {
-			background-image: url(/new-ingrad/resources/images/cards/card2.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: bottom 0 right 50%;
-		}
-		.slide-item:nth-child(3) {
-			background-image: url(/new-ingrad/resources/images/cards/card3.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: bottom 20% right 50%;
+	.caption-slide {
+		z-index: 10;
+		position: absolute;
+		left: 5%;
+		right: 52%;
+		top: 37%;
+		bottom: 36%;
+	}
+	.caption-slide h4 {
+		font-size: 2.125rem;
+		line-height: 3rem;
+	}
 
 
-		}
-		.slide-item:last-child {
-			background-image: url(/new-ingrad/resources/images/cards/card4.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: bottom 20% right 50%;
-		} 
+	.slide-item:first-child {
+		background-image: url(/new-ingrad/resources/images/cards/card1.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom 0 right 50%;
+	}
+	.slide-item:nth-child(2) {
+		background-image: url(/new-ingrad/resources/images/cards/card2.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:bottom 0 right 50%;
+	}
+	.slide-item:nth-child(3) {
+		background-image: url(/new-ingrad/resources/images/cards/card3.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom 20% right 50%;
+	}
+	.slide-item:last-child {
+		background-image: url(/new-ingrad/resources/images/cards/card4.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom 20% right 50%;
+	} 
 
-		.slide-nav {
+	.slide-nav {
 		grid-area: 1/1;
 		z-index: 1;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto 1fr;
-		}
+	}
 
-		.slide-nav button {
+	.slide-nav button {
 		-webkit-appearance: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		opacity: 0;
-		}
+	}
 
-		.slide-items > * {
+	.slide-items > * {
 		position: absolute;
 		opacity: 0;
 		pointer-events: none;
-		} 
+	} 
 
-		.slide-items > .active {
+	.slide-items > .active {
 		position: relative;
 		opacity: 1;
 		pointer-events: initial;
-		}
+	}
 
-		.slide-thumb {
+	.slide-thumb {
 		display: flex;
 		grid-column: 1 / 3;
 		margin: 2rem 2rem 0 2rem;
-		}
+	}
 
-		.slide-thumb > span {
+	.slide-thumb > span {
 		flex: 1;
 		display: block;
 		height: 4px;
@@ -669,9 +669,9 @@ section.section-g {
 		margin-right: 5%;
 		border-radius: 3px;
 		overflow: hidden;
-		}
+	}
 
-		.slide-thumb > span.active::after {
+	.slide-thumb > span.active::after {
 		content: '';
 		display: block;
 		height: inherit;
@@ -679,7 +679,7 @@ section.section-g {
 		border-radius: 3px;
 		transform: translateX(-100%);
 		animation: thumb 5s forwards linear;
-		}
+	}
 }
 
 @media screen and (min-width: 831px) {
@@ -704,14 +704,11 @@ section.section-g {
 	.section-first-video {
 		grid-column: col-start 1 / span 6;
 	}
-
-
 }
 
 
 
 @media screen and (min-width: 1081px) {
-
 	.caption-question h4 {
 		font-weight: 700;
 		font-size: 44px;
@@ -751,7 +748,7 @@ section.section-g {
 	p.statistics-text {
 		font-size: 1rem;
 		line-height: 1.5rem;
-}
+	}
 	section {
 		margin-bottom: 74px;
 	}
@@ -779,7 +776,6 @@ section.section-g {
 	.slide {
 		margin: 74px 0 150px 0;
 	}
-
 }
 
 
@@ -788,7 +784,7 @@ section.section-g {
 		justify-content: flex-start;
 		margin-left: 4.4444%;
 		gap: 20px;
-}
+	}
 	.section-first-text {
 		grid-column: col-start 6/ 12;
 	}
